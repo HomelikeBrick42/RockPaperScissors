@@ -39,7 +39,7 @@ def show_instructions() -> None:
 # This function will return 'r' for rock
 # This function will return 'p' for paper
 # This function will return 's' for scissors
-# This function will return '\0' for quit game
+# This function will return '\0' (null character) for quit game
 def ask_user_rock_paper_scissors() -> chr:
     # Forever
     while True:
@@ -65,18 +65,18 @@ def ask_user_rock_paper_scissors() -> chr:
             print("You found the secret weapon!")
             print("[Computer]: You cheated :(")
             print("[Computer]: Goodbye")
-            # Return the 0 character as a message to quit
+            # Return the null character as a message to quit
             return '\0'
         # If the user inputs "giganotosaurus" or "giga"
         elif answer == "giganotosaurus" or answer == "giga":
             # Print some messages
             print("[Computer]: Ahhhhhhhhhhh")
             print("Crunch...")
-            # Return the 0 character as a message to quit
+            # Return the null character as a message to quit
             return '\0'
         # If the user inputs "quit" or "q"
         elif answer == "quit" or answer == "q":
-            # Return the 0 character as a message to quit
+            # Return the null character as a message to quit
             return '\0'
         # If the user answers with anything else
         else:
