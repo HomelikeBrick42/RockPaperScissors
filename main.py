@@ -60,6 +60,13 @@ def ask_user_rock_paper_scissors() -> chr:
             print("[Computer]: Goodbye")
             # Return the 0 character as a message to quit
             return '\0'
+        # If the user inputs "giganotosaurus" or "giga"
+        elif answer == "giganotosaurus" or answer == "giga":
+            # Print some messages
+            print("[Computer]: Ahhhhhhhhhhh")
+            print("Crunch...")
+            # Return the 0 character as a message to quit
+            return '\0'
         # If the user inputs "quit" or "q"
         elif answer == "quit" or answer == "q":
             # Return the 0 character as a message to quit
