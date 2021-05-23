@@ -1,5 +1,3 @@
-from typing import List, Dict
-
 import random
 
 
@@ -50,8 +48,8 @@ def main() -> None:
             else:
                 print("Please enter a valid answer\n")
 
-        possible_answers: List[chr] = ['r', 'p', 's']
-        answer_to_string: Dict[chr, str] = {
+        possible_answers: list[chr] = ['r', 'p', 's']
+        answer_to_string: dict[chr, str] = {
             'r': "rock",
             'p': "paper",
             's': "scissors",
