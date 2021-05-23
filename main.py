@@ -33,6 +33,13 @@ def show_instructions() -> None:
     print("No instructions are made right now")
 
 
+# This function will repeatedly ask the user
+# for rock paper scissors and some secret answers
+#
+# This function will return 'r' for rock
+# This function will return 'p' for paper
+# This function will return 's' for scissors
+# This function will return '\0' for quit game
 def ask_user_rock_paper_scissors() -> chr:
     # Forever
     while True:
