@@ -66,27 +66,24 @@ def main() -> None:
         print(f"You chose {answer_to_string[player_answer]}")
         print(f"The computer chose {answer_to_string[computer_answer]}")
 
-        if player_answer == 'r':
-            if computer_answer == 'r':
-                print("Tie!")
-            elif computer_answer == 'p':
-                print("You loose!")
-            elif computer_answer == 's':
-                print("You win!")
-        elif player_answer == 'p':
-            if computer_answer == 'r':
-                print("You win!")
-            elif computer_answer == 'p':
-                print("Tie!")
-            elif computer_answer == 's':
-                print("You loose!")
-        elif player_answer == 's':
-            if computer_answer == 'r':
-                print("You loose!")
-            elif computer_answer == 'p':
-                print("You win!")
-            elif computer_answer == 's':
-                print("Tie!")
+        win: dict[chr, chr] = {
+            'r': 's',
+            'p': 'r',
+            's': 'p',
+        }
+
+        loose: dict[chr, chr] = {
+            'r': 'p',
+            'p': 's',
+            's': 'r',
+        }
+
+        if win[player_answer] == computer_answer:
+            print("You won!")
+        elif loose[player_answer] == computer_answer:
+            print("You loose!")
+        else:
+            print("Tie!")
 
         print()
 
